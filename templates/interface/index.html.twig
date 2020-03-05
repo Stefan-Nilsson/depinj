@@ -1,0 +1,24 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello InterfaceController!{% endblock %}
+
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+
+<div class="example-wrapper">
+    <h1>Hello ! ✅</h1>
+    <form action="/action_page.php">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="John"><br>
+        <input type="submit" value="Submit">
+    </form>
+    This friendly message is coming from:
+    <ul>
+        <li>Your controller at <code><a href="{{ '/var/www/depinj/src/Controller/InterfaceController.php'|file_link(0) }}">src/Controller/InterfaceController.php</a></code></li>
+        <li>Your template at <code><a href="{{ '/var/www/depinj/templates/interface/index.html.twig'|file_link(0) }}">templates/interface/index.html.twig</a></code></li>
+    </ul>
+</div>
+{% endblock %}
